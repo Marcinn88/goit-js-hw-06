@@ -15,12 +15,13 @@ const images = [
 
 const listImagesEl = document.querySelector(".gallery");
 
-listImagesEl.style.cssText = "display: flex; gap: 15px; flex-wrap: wrap";
+listImagesEl.style.cssText =
+  "display: flex; gap: 15px; flex-wrap: nowrap; justify-content: center";
 
 const createItemImagesEl = ({ url, alt }) => {
   return `
-  <li class="gallery-item">
-      <img src="${url}" alt="${alt}"/>
+  <li class="gallery-item" style="list-style: none">
+      <img  style="width:100%" src="${url}" alt="${alt}"/>
     </li>
     `;
 };

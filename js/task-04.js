@@ -10,12 +10,10 @@ const adder = document.querySelector(
 
 minuser.addEventListener("click", () => {
   counterValue -= 1;
-  console.log(counterValue);
   counter.textContent = counterValue;
 });
 
 adder.addEventListener("click", () => {
   counterValue += 1;
-  console.log(counterValue);
   counter.textContent = counterValue;
 });
